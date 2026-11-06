@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+	<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="StyleCop.Analyzers">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.Linq.Dynamic.Core" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestTemplateAI1.Application\TestTemplateAI1.Application.csproj" />
+    <ProjectReference Include="..\TestTemplateAI1.Common\TestTemplateAI1.Common.csproj" />
+    <ProjectReference Include="..\TestTemplateAI1.Core\TestTemplateAI1.Core.csproj" />
+  </ItemGroup>
+
+</Project>

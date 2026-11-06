@@ -1,0 +1,1 @@
+./src/wait-for-it.sh testtemplateai1.sql:5432 --timeout=0 --strict -- sleep 5s && dotnet ./TestTemplateAI1.Migrations.dll
