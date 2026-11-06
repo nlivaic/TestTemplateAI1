@@ -1,0 +1,6 @@
+**
+!Directory.Packages.props
+!nuget.config
+!src/TestTemplateAI1.Migrations/**
+src/**/bin/
+src/**/obj/
